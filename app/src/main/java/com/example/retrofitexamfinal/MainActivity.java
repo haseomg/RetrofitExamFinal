@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity
 
         preferenceHelper = new PreferenceHelper(this);
 
+
+
         etId = (EditText) findViewById(R.id.etId);
 //        etPw = (EditText) findViewById(R.id.etPw);
 //        etPwCheck = (EditText) findViewById(R.id.etPwCheck);
