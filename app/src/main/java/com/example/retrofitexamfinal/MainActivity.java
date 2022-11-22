@@ -24,7 +24,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class MainActivity extends AppCompatActivity
 {
-    public final String TAG = "MainActivity";
+    public final String TAG = "[MainActivity]";
 
     private EditText etId, etPw, etPwCheck, etNickName;
     private Button btnregister;
@@ -72,8 +72,11 @@ public class MainActivity extends AppCompatActivity
 
     private void registerMe()
     {
+        Log.i(TAG,"registerMe 메서드 작동");
         final String id = etId.getText().toString();
         final String nickname = etNickName.getText().toString();
+        Log.i(TAG,"String id : " + id);
+        Log.i(TAG,"String nickname : " + nickname);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(RegisterInterface.REGIST_URL)
@@ -87,9 +90,11 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response)
             {
+                Log.i(TAG,"onResponse 메서드 작동");
+
                 if (response.isSuccessful() && response.body() != null)
                 {
-                    Log.e("onSuccess", response.body());
+                    Log.e("onSuccess [성공]", response.body());
 
                     String jsonResponse = response.body();
                     try
