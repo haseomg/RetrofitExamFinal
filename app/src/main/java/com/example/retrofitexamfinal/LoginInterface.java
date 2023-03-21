@@ -6,7 +6,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface LoginInterface {
-    String LOGIN_URL = "http://43.201.105.106/";
+    String LOGIN_URL = "http://54.180.155.66/";
 
     @FormUrlEncoded
     @POST("retrofit_simplelogin.php")
