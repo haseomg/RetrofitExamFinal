@@ -16,6 +16,7 @@
         android:background="#fff"
         android:hint="아이디"
         android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:paddingLeft="5dp" />
 
     <EditText
@@ -29,6 +30,7 @@
         android:hint="비밀번호"
         android:textColorHint="@color/black"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         android:paddingLeft="5dp" />
 
     <Button
