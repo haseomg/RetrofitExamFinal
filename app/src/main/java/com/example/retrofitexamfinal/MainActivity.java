@@ -119,14 +119,17 @@ public class MainActivity extends AppCompatActivity
 
     private void parseRegData(String response) throws JSONException
     {
+        Log.i(TAG,"parseRegData 메서드 작동");
         JSONObject jsonObject = new JSONObject(response);
         if (jsonObject.optString("status").equals("true"))
         {
             saveInfo(response);
             Toast.makeText(MainActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
+            Log.i(TAG,"parseRegData status == true");
         }
         else
         {
+            Log.i(TAG,"parseRegData status == true가 아닐 때");
             Toast.makeText(MainActivity.this, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
         }
     }

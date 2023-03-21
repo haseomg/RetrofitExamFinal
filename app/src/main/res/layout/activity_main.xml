@@ -79,6 +79,6 @@
         android:gravity="center"
         android:text="이미 아이디가 있으시다면 여길 눌러 로그인하세요"
         android:textColor="#fff"
-        android:textSize="19sp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
