@@ -11,9 +11,14 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="레트로핏 회원가입"
+        android:text="Retrofit Register"
+        android:fontFamily="sans-serif-light"
         android:textColor="#fff"
         android:textSize="29sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
 
     <EditText
         android:id="@+id/etId"
@@ -23,6 +28,8 @@
         android:layout_marginRight="20dp"
         android:background="#fff"
         android:hint="아이디"
+        android:textColorHint="@color/black"
+        android:fontFamily="sans-serif-light"
         android:textColor="@color/black"
         android:paddingLeft="5dp" />
 
@@ -35,31 +42,38 @@
         android:layout_marginRight="20dp"
         android:background="#fff"
         android:hint="닉네임"
+        android:textColorHint="@color/black"
+        android:fontFamily="sans-serif-light"
         android:textColor="@color/black"
         android:paddingLeft="5dp" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/etPw"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:background="#fff"-->
-<!--        android:hint="비밀번호"-->
-<!--        android:paddingLeft="5dp" />-->
+    <EditText
+        android:id="@+id/etPw"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:textColorHint="@color/black"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/etPwCheck"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:background="#fff"-->
-<!--        android:hint="비밀번호 확인"-->
-<!--        android:inputType="textPassword"-->
-<!--        android:paddingLeft="5dp" />-->
+    <EditText
+        android:id="@+id/etPwCheck"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp" />
 
     <Button
         android:id="@+id/btn"
